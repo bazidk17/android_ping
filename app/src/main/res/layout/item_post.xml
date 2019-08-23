@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp">
+    <TextView
+        android:id="@+id/lblPostText"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:text="THIS IS CONTENT" />
+    <ImageView
+        android:id="@+id/ivShownImage"
+        android:paddingTop="3dp"
+        android:paddingBottom="3dp"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_below="@+id/lblPostText"
+        android:layout_centerInParent="true"
+        android:src="@drawable/ic_launcher_background"/>
+    
+    <TextView
+        android:layout_below="@+id/ivShownImage"
+        android:layout_toLeftOf="@+id/lblPostTime"
+        android:id="@+id/lblPostDate"
+
+        android:layout_width="wrap_content"
+        android:text="DATE"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"/>
+    <TextView
+        android:layout_below="@+id/ivShownImage"
+        android:id="@+id/lblPostTime"
+        android:layout_alignParentRight="true"
+        android:layout_width="wrap_content"
+        android:text="TIME"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"/>
+
+</RelativeLayout>

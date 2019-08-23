@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/rlLogin"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.k17.ping.Login">
+
+    <ImageView
+        android:id="@+id/imgLogo"
+        android:layout_marginTop="50dp"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:src="@mipmap/ic_logo_ping" />
+
+    <LinearLayout
+        android:id="@+id/loginContent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="20dp"
+        android:layout_below="@+id/imgLogo">
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <EditText
+                android:id="@+id/txtloginPhone"
+                android:layout_width="match_parent"
+                android:maxLength="10"
+                android:inputType="number"
+                android:layout_height="wrap_content"
+                android:hint="Phone Number"/>
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:passwordToggleDrawable="@drawable/ic_password"
+            app:passwordToggleEnabled="true">
+            <EditText
+                android:id="@+id/txtPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Password"
+                android:inputType="textPassword"/>
+        </android.support.design.widget.TextInputLayout>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Login"
+            android:onClick="gotoHome"
+            android:theme="@style/buttonEffect"/>
+
+    </LinearLayout>
+    <TextView
+        android:layout_below="@+id/loginContent"
+        android:id="@+id/lblForgotPass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Forgot Password?"
+        android:layout_margin="20dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:layout_alignParentRight="true"
+        android:onClick="gotoForgotRetrieve"/>
+
+    <TextView
+        android:layout_below="@+id/loginContent"
+        android:layout_width="wrap_content"
+
+        android:layout_height="wrap_content"
+        android:text="New User?"
+        android:layout_margin="20dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:onClick="gotoSignUp"/>
+</RelativeLayout>

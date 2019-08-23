@@ -1,0 +1,55 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/constraintLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:id="@+id/linearFascadeAppBar"
+        android:layout_width="match_parent"
+        android:layout_height="105dp"
+        android:orientation="horizontal"/>
+    <ScrollView
+        android:layout_below="@+id/linearFascadeAppBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_margin="20dp">
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <EditText
+            android:id="@+id/txtMessage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Text"
+            android:inputType="textMultiLine"/>
+        </android.support.design.widget.TextInputLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary">
+            <ImageView
+                android:id="@+id/ivImage"
+                android:background="@color/colorBackground"
+                android:layout_margin="1dp"
+                android:layout_width="250dp"
+                android:layout_height="230dp"/>
+        </LinearLayout>
+        <Button
+            android:id="@+id/btnPost"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:theme="@style/buttonEffect"
+            android:text="Post" />
+
+    </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

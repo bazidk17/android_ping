@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.k17.ping.ForgotSQA">
+
+    <LinearLayout
+        android:layout_centerInParent="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/linearLayout"
+        android:layout_margin="20dp">
+        <EditText
+            android:id="@+id/txtforgotsqaPhone"
+            android:layout_marginTop="10dp"
+            android:hint="Phone Number"
+            android:editable="false"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:id="@+id/txtforgotsqaSQ"
+            android:layout_marginTop="30dp"
+            android:editable="false"
+            android:hint="Security Question"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:id="@+id/txtforgotsqaSA"
+            android:layout_marginTop="10dp"
+
+            android:hint="Secuirty Answer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:theme="@style/buttonEffect"
+            android:text="Submit"
+            android:onClick="gotoForgotCP"/>
+    </LinearLayout>
+
+</RelativeLayout>

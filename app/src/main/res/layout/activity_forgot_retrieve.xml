@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.k17.ping.ForgotRetrieve">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/linearLayout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="74dp"
+        android:text="@string/forget_password_retrieve"
+        android:textSize="20dp" />
+    <LinearLayout
+        android:layout_centerInParent="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="20dp"
+        android:id="@+id/linearLayout">
+
+        <EditText
+            android:id="@+id/txtforgetPhone"
+            android:layout_marginTop="10dp"
+            android:hint="Phone Number"
+            android:inputType="number"
+            android:maxLength="10"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:theme="@style/buttonEffect"
+            android:text="Submit"
+            android:onClick="gotoForgotSQA"/>
+    </LinearLayout>
+
+
+</RelativeLayout>
